@@ -1,6 +1,4 @@
-<section id="home" class="s-home target-section bb-yellow" data-parallax="scroll"
-         data-image-src="/images/cookie-bg.jpg"
-         data-natural-width=1920 data-natural-height=1280 data-position-y=center>
+<section id="home" class="s-home target-section bb-yellow" data-parallax="scroll" data-image-src="/images/help-bg.jpg" data-natural-width=1920 data-natural-height=1280 data-position-y=center>
 
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
@@ -9,12 +7,11 @@
 
         <div class="row home-content__main">
 
-            <h3><?php echo $text->cookies->sub1; ?></h3>
+            <h3><?php echo $text->help->sub1; ?></h3>
 
             <h1>
-                <?php echo $text->cookies->hed1; ?>
+              <?php echo $text->help->hed1; ?>
             </h1>
-
 
         </div>
 
@@ -42,25 +39,17 @@
         </li>
     </ul> 
 
-    </section> 
+</section> 
 
-<section id='works' class="s-works bb-yellow">
+<section id="clients" class="s-clients separate bb-yellow">
 
-  <div class="row" data-aos="fade-up">
-    <div class="row narrow section-intro add-bottom text-center about-desc">
 
-      <div class="col-twelve tab-full">
-        <br><br>
+    <div class="row" data-aos="fade-up">
+        <div class="col-full">
 
-        <h1 class="display-2"><?php echo $text->cookies->hed2; ?></h1>
-        <p class="lead"><?php echo $text->cookies->desc; ?></p>
-      </div>
-
-    </div>
-
-    <div class="row cookies">
-      <?php cookies_build($text->cookies->typs); ?>
-      <br><br><br><br>
+          <?php althelp_build($text->help->bod1); ?>
+            
+        </div> 
     </div>
 
 </section>

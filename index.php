@@ -37,8 +37,12 @@ require_once "php/content.php";
 <body id="top">
 
     <?php include_once "partials/header.php";
+
           include_once strpos($_SERVER['REQUEST_URI'], "data-processing") ? "partials/cookies.php"
-                                                                          : "partials/home.php";
+                       : (strpos($_SERVER['REQUEST_URI'], "contact")      ? "partials/contact.php"
+                       : (strpos($_SERVER['REQUEST_URI'], "help-us")      ? "partials/help-us.php"
+                       : (strpos($_SERVER['REQUEST_URI'], "about")        ? "partials/about.php"
+                                                                          : "partials/home.php")));
           include_once "partials/footer.php"; ?>
 
     <div id="preloader">
@@ -50,6 +54,11 @@ require_once "php/content.php";
     </div>
 
     <?php scripts_build($f_scripts); ?>
+
+    <?php /*  Alex 30.30.2022: This won't show on the frontend unless uncommented,
+              and sits here just in case. Uncomment typed.js in content.php and add
+              corresponding ID's to HTML to use it (<span>'s suggested in order to
+              prevent unintended linebreaks).
 
     <script type="text/javascript">
       <?php if (!strpos($_SERVER['REQUEST_URI'], 'data-processing')) { ?>
@@ -78,7 +87,29 @@ require_once "php/content.php";
         loop: true
       });
       <?php } ?>
-    </script>
+    </script> */
+    
+    if ($_SERVER['REQUEST_URI'] == '/') { ?>
+
+        <script src="/js/three.r119.min.js"></script>
+        <script src="/js/vanta.birds.min.js"></script>
+        <script>
+        VANTA.BIRDS({
+          el: "#services",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0xffffff,
+          color1: 0xffda34,
+          color2: 0x348cff,
+          quantity: 1.00
+        })
+        </script>
+    <?php } ?>
 
 </body>
 

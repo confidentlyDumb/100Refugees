@@ -12,17 +12,25 @@ function scripts_build($scripts) {
   }
 }
 
+function nav_build($nav) {
+  foreach ($nav as $name => $link) {
+    $current = strpos($_SERVER['REQUEST_URI'], $link) ? " current" : "";
+
+    echo "<li class='{$current}'>
+            <a href='/{$link}/' title='home'>{$name}</a>
+          </li>";
+  }
+}
+
+function prtn_build($prtnrs) {
+  foreach ($prtnrs as $prtnr) {
+    echo "<a href='http://{$prtnr}.com' title='{$prtnr}' title='{$prtnr} logo' class='clients__slide'><img src='/images/prtnrs/test.png'></a>";
+  }
+}
+
 function work_build($work) {
   foreach ($work as $item) {
-    echo "<div class='col-block service-item' data-aos='fade-up'>
-            <div class='service-icon'>
-                <i class='icon-{$item->icon}'></i>
-            </div>
-            <div class='service-text'>
-                <h3 class='h2'>{$item->head}</h3>
-                {$item->innr}
-            </div>
-        </div>";
+    echo "<li>{$item->innr}</li>";
   }
 }
 
@@ -58,4 +66,21 @@ function cookies_build($cookies) {
           </div>";
   }
 }
+
+function althelp_build($help) {
+  foreach ($help as $item) {
+    $pre_list = explode("<br>", $item->body);
+    $list = '';
+
+    foreach ($pre_list as $list_item) {
+      $list .= strlen($list_item) ? "<li>{$list_item}</li>" : '';
+    }
+
+    echo "<div class='col-twelve tab-full'>
+            <h3>{$item->head}</h3>
+            <ul>{$list}</ul>
+          </div><hr><br>";
+  }
+}
+
 ?>

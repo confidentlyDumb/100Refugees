@@ -1,10 +1,16 @@
 {
 
+  "nav":{
+    "Help us":"help-us",
+    "About us":"about",
+    "Contact Us":"contact"
+  },
+
   "hero":{
     "sub1":"welcome to 100Refugees.com",
-    "hed1":"This is a draft site. <br>We are recruiting the last <br>partners before announcing <br>the effort.",
-    "btn1":"Contact us",
-    "btn2":"More About Us",
+    "hed1":"<span class='yellow'>EFFORT LAUNCHING<br>SOON.</span>",
+    "btn1":"IN ENGLISH",
+    "btn2":"УКРАЇНСЬКИЙ",
     "scrl":"Scroll Down"
   },
 
@@ -12,68 +18,59 @@
     "sub1":"Making a difference",
     "hed1":"100Refugees.",
     "bod1":"We are helping 50 ukranian families to get to safety (and some normality) in Denmark.<br><br>We are a private effort to help 90-120 ukranians. We pick them up as close as possible to their home or border, housing them in a hygge setting and giving them a job at market rates. We then support and cooperate with local authorities to give them all of the social benefits that one refugee is entitled in Denmark. <br><br>We just started but our goal is to ultimately give them a hande when it’s time to reconstruct their lives back in Ukraine.",
-    "sub2":"This is an effort by:"
+    "sub2":"This is an effort by:",
+    "part":["Nærgaard", "CharlesRobotics", "CarWashingRobots"]
   },
 
   "work":{
-    "sub1":"The process",
-    "hed1":"HOW DOES IT WORK?",
+    "sub1":"How we help",
+    "hed1":"UKRANIAN FAMILIES",
     "bod1":{
       "item0":{
         "head":"Speak up",
-        "icon":"megaphone",
-        "innr":"<p>Ukranians help spreading the word</p>"
+        "innr":"Ukranians help spreading the word"
       },
       "item1":{
         "head":"Apply",
-        "icon":"group",
-        "innr":"<p>Every ukranian can apply or apply on behalf of others</p>"
+        "innr":"Every ukranian can apply or apply on behalf of others"
       },
       "item2":{
         "head":"Shelter",
-        "icon":"home",
-        "innr":"<p>We build tiny homes at 2 locations in Denmark</p>"
+        "innr":"We build tiny homes at 2 locations in Denmark"
       },
       "item3":{
-        "head":"Arrive",
-        "icon":"car",
-        "innr":"<p>We rent a bus to pickup 90/100 people / 50 families (likely from ________)</p>"
+        "head":"Take a chance",
+        "innr":"We “hire” without negative discrimination. Ie, we favor families with small kids due to the life impact that this may have on them. We may chose a few that have drivers license for instance, since they would help other refugees driving to work but we are also open to non-english speakers or older refugees, others that would less easy to to integrate."
       },
       "item4":{
-        "head":"Take a chance",
-        "icon":"user",
-        "innr":"<p>We “hire” without negative discrimination. Ie, we favor families with small kids due to the life impact that this may have on them. We may chose a few that have drivers license for instance, since they would help other refugees driving to work but we are also open to non-english speakers or older refugees, others that would less easy to to integrate.</p>"
+        "head":"Arrive",
+        "innr":"We rent a bus to pickup 90/100 people / 50 families (likely from ________)"
       },
       "item5":{
-        "head":"Welcome",
-        "icon":"smile",
-        "innr":"<p>We work to welcome them</p><ul><li>We hope that they can feel as little refugee as possible in Denmark</li><li>We hope that they can return quickly back to their own home</li></ul>"
+        "head":"Settle",
+        "innr":"We welcome them and host them in 2 quality locations in Jylland and Sjælland"
       },
       "item6":{
-        "head":"Settle",
-        "icon":"earth",
-        "innr":"<p>We welcome them and host them in 2 quality locations in Jylland and Sjælland</p>"
+        "head":"Work",
+        "innr":"We find local jobs from other companies"
       },
       "item7":{
-        "head":"Work",
-        "icon":"trophy",
-        "innr":"<p>We find local jobs from other companies</p>"
+        "head":"Cooperate",
+        "innr":"We give jobs to all of the welcomed refugees"
       },
       "item8":{
-        "head":"Cooperate",
-        "icon":"suitcase",
-        "innr":"<p>We give jobs to all of the welcomed refugees</p>"
+        "head":"Welcome",
+        "innr":"We work to welcome them<br><ul class='lead'><li>We hope that they can feel as little refugee as possible in Denmark</li><li>We hope that they can return quickly back to their own home</li></ul>"
       },
       "item9":{
         "head":"Hope",
-        "icon":"star",
-        "innr":"<p>If we can afford to, we will help them getting their lives back to normal in ukraine.</p>"
+        "innr":"If we can afford to, we will help them getting their lives back to normal in ukraine."
       }
     }
   },
 
   "detl":{
-    "sub1":"Our reasoning",
+    "sub1":"We need to help Ukraine",
     "hed1":"WHY THIS INITIATIVE?",
     "bod1":"This initiative started when one of the founders, Anibal Damiao got in touch. We diverted some efforts of our team, that was working on some secret projects, and we launched the campaign in 10 days.<br><br>We basically turned our company around to onboard 30/40 more employees quickly.",
     "hed2":"Anibal Damiao",

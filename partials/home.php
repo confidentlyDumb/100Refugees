@@ -8,17 +8,17 @@
 
         <div class="row home-content__main">
 
-            <h3><span id="typed1"></span></h3>
+            <h3><?php echo $text->hero->sub1; ?></h3>
 
             <h1>
                 <?php echo $text->hero->hed1; ?>
             </h1>
 
             <div class="home-content__buttons">
-                <a href="#contact" class="smoothscroll btn btn--stroke">
+                <a href="#top" class="smoothscroll btn btn--stroke">
                     <?php echo $text->hero->btn1; ?>
                 </a>
-                <a href="#about" class="smoothscroll btn btn--stroke">
+                <a href="#services" class="smoothscroll btn btn--stroke">
                     <?php echo $text->hero->btn2; ?>
                 </a>
             </div>
@@ -49,8 +49,9 @@
         </li>
     </ul> 
 
-    </section> 
-    <section id='about' class="s-about bb-yellow">
+</section> 
+
+<section id='about' class="s-about bb-yellow">
 
     <div class="row section-header has-bottom-sep bs-yellow" data-aos="fade-up">
         <div class="col-full">
@@ -68,42 +69,47 @@
             <h3 class="subhead yellow">
             <?php echo $text->about->sub2; ?>
             </h3>
-            <p class="yellow">
-              <span id="typed2"></span>
-            </p>
-            <br>
-            <br>
+        </div>
+    </div>
+
+    <div class="row clients-outer" data-aos="fade-up">
+        <div class="col-full">
+            <div class="clients">
+
+              <?php prtn_build($text->about->part); ?>
+                
+            </div>
         </div>
     </div>
 
     <div class="about__line"></div>
 
-    </section>
+</section>
 
-    <section id='services' class="s-services">
+<section id='services' class="s-services">
 
     <div class="row section-header has-bottom-sep" data-aos="fade-up">
         <div class="col-full">
-            <h3 class="subhead"><?php echo $text->work->sub1; ?></h3>
+             <h3 class="subhead"><?php echo $text->work->sub1; ?></h3>
             <h1 class="display-2"><?php echo $text->work->hed1; ?></h1>
         </div>
     </div>
 
-    <div class="row services-list block-1-2 block-tab-full">
-
-    <?php work_build($text->work->bod1); ?>
-
+    <div class="row services-list block-1-2 block-tab-full" data-aos="fade-up">
+      <ul class='col-twelve tab-full lead'>
+        <?php work_build($text->work->bod1); ?>
+      </ul>
     </div>
 
-    </section>
+</section>
 
-    <div class="custom-shape-divider-top-1648054252">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-    </svg>
-    </div>
+<div class="custom-shape-divider-top-1648054252">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+  </svg>
+</div>
 
-    <section id='works' class="s-works">
+<section id='works' class="s-works">
 
     <div class="intro-wrap bb-yellow">
             
@@ -169,12 +175,12 @@
       </div>
 
 
-    </section>
+</section>
 
     <div class="custom-shape-divider-top-1648055506">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
-    </svg>
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+      </svg>
     </div>
 
     <section id="clients" class="s-clients bb-yellow">
