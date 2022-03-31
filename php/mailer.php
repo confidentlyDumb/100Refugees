@@ -21,21 +21,21 @@ if(isset($_POST)) {
 
     $subject  = "Message from 100Refugees";
 
-    $message  = "Email from: " . $name . "<br />";
-    $message .= "Email address: " . $email . "<br />";
+    $message  = "Email from:{$name}<br />";
+    $message .= "Email address:{$email}<br />";
     $message .= "Message: <br />";
     $message .= $contact_message;
 
-    $from     = $name . " <" . $email . ">";
+    $from     = "{$name} <{$email}>";
 
-    $headers  = "From: " . $from . "\r\n";
-    $headers .= "Reply-To: ". $email . "\r\n";
+    $headers  = "From: {$from} \r\n";
+    $headers .= "Reply-To: {$email} \r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
     if (!(isset($error) && $error)) {
-        ini_set("sendmail_from", $siteOwnersEmail); // if you happen to host this
-                                                    // on a Windows machine
+        ini_set("sendmail_from", $siteOwnersEmail); // If you happen to host this
+                                                    // on a Windows machine.
 
         $mail = mail($siteOwnersEmail, $subject, $message, $headers);
         echo $mail ? "OK" : "Something went wrong. Please try again.";
