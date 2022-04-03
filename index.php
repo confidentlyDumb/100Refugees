@@ -1,10 +1,16 @@
 <?php
 session_start();
 
-$_SESSION['lang'] = !isset($_SESSION['lang']) ? 'en' : $_SESSION['lang'];
-$lang = $_SESSION['lang'];
+/**
+ * TODO: translate /php/lang/dk.json and /php/lang/ua.json.
+ * Do not make any changes to the structure of objects.
+ */
 
-$text = json_decode(file_get_contents("php/lang/{$lang}.json"));
+$_SESSION['lang'] = !isset($_SESSION['lang']) ? 'ua' : $_SESSION['lang'];
+
+$pagenow = $_SERVER['REQUEST_URI'];
+$lang    = $_SESSION['lang'];
+$text    = json_decode(file_get_contents("php/lang/{$lang}.json"));
 
 require_once "php/env.php";
 require_once "php/helpers.php";
@@ -16,13 +22,13 @@ require_once "php/content.php";
 <!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
+<html class="no-js" lang="<?php echo $lang; ?>">
 <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <title>100Refugees</title>
-    <meta name="description" content="">
+    <meta name="description" content="<?php echo $text->hero->hed1; ?>">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,11 +44,12 @@ require_once "php/content.php";
 
     <?php include_once "partials/header.php";
 
-          include_once strpos($_SERVER['REQUEST_URI'], "data-processing") ? "partials/cookies.php"
-                       : (strpos($_SERVER['REQUEST_URI'], "contact")      ? "partials/contact.php"
-                       : (strpos($_SERVER['REQUEST_URI'], "help-us")      ? "partials/help-us.php"
-                       : (strpos($_SERVER['REQUEST_URI'], "about")        ? "partials/about.php"
-                                                                          : "partials/home.php")));
+          include_once strpos($pagenow, "data-processing") ? "partials/cookies.php"
+                    : (strpos($pagenow, "contact")         ? "partials/contact.php"
+                    : (strpos($pagenow, "help-us")         ? "partials/help-us.php"
+                    : (strpos($pagenow, "about")           ? "partials/about.php"
+                    : (strpos($pagenow, "?lang")           ? "php/session.php"
+                                                           : "partials/home.php"))));
           include_once "partials/footer.php"; ?>
 
     <div id="preloader">
@@ -61,7 +68,7 @@ require_once "php/content.php";
               prevent unintended linebreaks).
 
     <script type="text/javascript">
-      <?php if (!strpos($_SERVER['REQUEST_URI'], 'data-processing')) { ?>
+      <?php if (!strpos($pagenow, 'data-processing')) { ?>
       var typed1 = new Typed('#typed1', {
         strings: ['<?php echo $text->hero->sub1; ?>'],
         typeSpeed: 75,
@@ -89,8 +96,12 @@ require_once "php/content.php";
       <?php } ?>
     </script> */
     
-    if ($_SERVER['REQUEST_URI'] == '/') { ?>
-
+    /**
+     * Animated blue & yellow birds for the "HOW WE HELP"
+     * section. See the instructions on how to customise
+     * the plugin at https://www.vantajs.com/
+     */
+    if ($pagenow == '/') { ?>
         <script src="/js/three.r119.min.js"></script>
         <script src="/js/vanta.birds.min.js"></script>
         <script>
@@ -106,6 +117,7 @@ require_once "php/content.php";
           backgroundColor: 0xffffff,
           color1: 0xffda34,
           color2: 0x348cff,
+          colorMode: "lerpGradient",
           quantity: 1.00
         })
         </script>

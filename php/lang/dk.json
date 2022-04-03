@@ -1,0 +1,177 @@
+
+
+{
+
+  "nav":{
+    "Help us":"help-us",
+    "About us":"about",
+    "Contact Us":"contact"
+  },
+
+  "hero":{
+    "sub1":"welcome to 100Refugees.com",
+    "hed1":"<span class='yellow'>EFFORT LAUNCHING<br>SOON.</span>",
+    "btn1":"IN ENGLISH",
+    "btn2":"УКРАЇНСЬКИЙ",
+    "scrl":"Scroll Down"
+  },
+
+  "about":{
+    "sub1":"Making a difference",
+    "hed1":"100Refugees.",
+    "bod1":"We are helping 50 ukranian families to get to safety (and some normality) in Denmark.<br><br>We are a private effort to help 90-120 ukranians. We pick them up as close as possible to their home or border, housing them in a hygge setting and giving them a job at market rates. We then support and cooperate with local authorities to give them all of the social benefits that one refugee is entitled in Denmark. <br><br>We just started but our goal is to ultimately give them a hande when it’s time to reconstruct their lives back in Ukraine.",
+    "sub2":"This is an effort by:",
+    "part":["Nærgaard", "CharlesRobotics", "CarWashingRobots"]
+  },
+
+  "work":{
+    "sub1":"How we help",
+    "hed1":"UKRANIAN FAMILIES",
+    "bod1":{
+      "item0":{
+        "head":"Speak up",
+        "innr":"Ukranians help spreading the word"
+      },
+      "item1":{
+        "head":"Apply",
+        "innr":"Every ukranian can apply or apply on behalf of others"
+      },
+      "item2":{
+        "head":"Shelter",
+        "innr":"We build tiny homes at 2 locations in Denmark"
+      },
+      "item3":{
+        "head":"Take a chance",
+        "innr":"We “hire” without negative discrimination. Ie, we favor families with small kids due to the life impact that this may have on them. We may chose a few that have drivers license for instance, since they would help other refugees driving to work but we are also open to non-english speakers or older refugees, others that would less easy to to integrate."
+      },
+      "item4":{
+        "head":"Arrive",
+        "innr":"We rent a bus to pickup 90/100 people / 50 families (likely from ________)"
+      },
+      "item5":{
+        "head":"Settle",
+        "innr":"We welcome them and host them in 2 quality locations in Jylland and Sjælland"
+      },
+      "item6":{
+        "head":"Work",
+        "innr":"We find local jobs from other companies"
+      },
+      "item7":{
+        "head":"Cooperate",
+        "innr":"We give jobs to all of the welcomed refugees"
+      },
+      "item8":{
+        "head":"Welcome",
+        "innr":"We work to welcome them<br><ul class='lead'><li>We hope that they can feel as little refugee as possible in Denmark</li><li>We hope that they can return quickly back to their own home</li></ul>"
+      },
+      "item9":{
+        "head":"Hope",
+        "innr":"If we can afford to, we will help them getting their lives back to normal in ukraine."
+      }
+    }
+  },
+
+  "detl":{
+    "sub1":"We need to help Ukraine",
+    "hed1":"WHY THIS INITIATIVE?",
+    "bod1":"This initiative started when one of the founders, Anibal Damiao got in touch. We diverted some efforts of our team, that was working on some secret projects, and we launched the campaign in 10 days.<br><br>We basically turned our company around to onboard 30/40 more employees quickly.",
+    "hed2":"Anibal Damiao",
+    "sub2":"is 43 so he had enough of a life to see first hand how people, even in Denmark, dehumanized refuges from Syria a few years ago. Anibal also had the chance to see how national and EU governments didn’t stop the war in Syria and Ukraine when they could.",
+    "bod2":["Those humans had a different value. And he also had the chance to see how the EU mostly ignored the 2014 invasion of Ukraine while weakening everyone with bad environmental, foreign relations and energetic policies, allowing the bad guys in Russia to believe that they can continue untouched. It’s not a democracy when these things happen, when oligarchs are welcome in dafe and fancy neighbors, when politicians take board roles in companies supported by the regime, etc.. Every single politician in the EU and at the government level is co-responsible for lack of action that enabled wars. As a private citizen, Anibal doesn’t understand how EU politicians can justify their salaries if EU’s energetic dependency on Russia and economic dependency on others was allowed to happen. And our partners can’t understand it either.",
+            "Although Denmark isn’t the worst on that list of countries, Anibal was (and still is) a foreigner in this country thatallowed some to spit on Syrian refugees walking in a highway towards safely, a country that had an election moving towards syrian refugees as it single issue, and a country that had a long government-led hate speech towards refugees.A country that ultimately sent an immigration minister to jail due to her outrageous and illegal behavior is a country that doesn’t have a short term view of peace in the world.<br><br>Denmark is not the worst though, Danes are mostly not like that. Anibal Damiao believes that the our society can still do more, along what local governments are doing."],
+    "sub3":"That’s why we will try."
+  },
+
+  "help":{
+    "sub1":"Take part",
+    "hed1":"HOW CAN YOU HELP?",
+    "bod1":{
+      "slide0":{
+        "head":"Ukranians living in Denmark or abroad:",
+        "body":"Tell us if you think some things can be done/how <br>Join initiatives like any other private individuals <br>Translate our site <br>Spread the word </p>"
+      },
+      "slide1":{
+        "head":"Farmers:",
+        "body":"Can you hire some refugees? <br>Can you host some refugees? <br>Is your farm near a town and can you donate a piece of farming land near it?</p>"
+      },
+      "slide2":{
+        "head":"Companies:",
+        "body":"Can you hire some refugees? <br>Can you donate construction materials?</p>"
+      },
+      "slide3":{
+        "head":"Private individuals:",
+        "body":"Signup for the donation list and tell us what you can offer. We may ask for specific items at specific locations once we identify those needs (eg baby clothing, etc…) <br>Signup to the volunteer list and we will bring you onboard on any activity that you may be able to contribute with. <br><br>"
+      },
+      "slide4":{
+        "head":"Support our businesses redirecting earnings to help:",
+        "body":"Buy a tiny house or annex with us. 100% of those profits go to funding refugee housing and to a expatriation fund to help refugees return to their home land. <br>Buy a subscription to vegetables from one of our farm. 50% of profits go to an expatriation fund to help refugees return to their homeladn, while allowing us to  scaling up the effort that allows us to hire more workers."
+      }
+    }
+  },
+
+  "cont":{
+    "hed1":"<span class='blue'>Reach out for help</span><br><span class='yellow'>or cooperation</span>",
+    "sub1":"Send Us A Message",
+    "sub2":"Contact Info",
+    "form":{
+      "field0":{
+        "tag":"input",
+        "name":"contactName",
+        "type":"text",
+        "hold":"Your Name"
+      },
+      "field1":{
+        "tag":"input",
+        "name":"contactEmail",
+        "type":"email",
+        "hold":"Your Email"
+      },
+      "field2":{
+        "tag":"textarea",
+        "name":"contactMessage",
+        "type":"",
+        "hold":"Your Message"
+      }
+    },
+    "mail":"Email Us At",
+    "call":"Call Us At"
+  },
+  "footer":["We are helping 50 ukranian families to get to safety (and some normality) in Denmark.<br><br>We are a private effort to help 90-120 ukranians. We pick them up as close as possible to their home or border, housing them in a hygge setting and giving them a job at market rates.",
+            "We then support and cooperate with local authorities to give them all of the social benefits that one refugee is entitled in Denmark.",
+            "<a href='/data-processing'>Data processing</a>"],
+  "notif":{
+    "fail":"Something went wrong. Please try again.",
+    "success":"Your message was sent, thank you!<br>",
+    "eName":"Please enter your name.",
+    "eMail":"Please enter a valid email address.",
+    "eMesg":"Please enter your message. It should have at least 15 characters."
+  },
+  "cookies":{
+    "sub1":"About cookies",
+    "hed1":"Learn more about<br> how this site uses<br> your data.",
+    "hed2":"What cookie files are?",
+    "desc":"Cookies are small text files that are placed on your computer by websites that you visit. Websites use cookies to help users navigate efficiently and perform certain functions. Cookies that are required for the website to operate properly are allowed to be set without your permission. All other cookies need to be approved before they can be set in the browser. You can change your consent to cookie usage at any time on our Privacy Policy page.",
+    "typs":{
+      "typ0":{
+        "name":"Strictly necessary",
+        "cont":"Strictly necessary cookies allow core website functionality such as user login and account management. The website cannot be used properly without strictly necessary cookies."
+      },
+      "typ1":{
+        "name":"Performance",
+        "cont":"Performance cookies are used to see how visitors use the website, eg. analytics cookies. Those cookies cannot be used to directly identify a certain visitor."
+      },
+      "typ2":{
+        "name":"Targeting",
+        "cont":"Targeting cookies are used to identify visitors between different websites, eg. content partners, banner networks. Those cookies may be used by companies to build a profile of visitor interests or show relevant ads on other websites."
+      },
+      "typ3":{
+        "name":"Functionality",
+        "cont":"Functionality cookies are used to remember visitor information on the website, eg. language, timezone, enhanced content."
+      },
+      "typ4":{
+        "name":"Unclassified",
+        "cont":"Unclassified cookies are cookies that do not belong to any other category or are in the process of categorization."
+      }
+    }
+  }
+}

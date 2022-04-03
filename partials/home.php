@@ -15,10 +15,10 @@
             </h1>
 
             <div class="home-content__buttons">
-                <a href="#top" class="smoothscroll btn btn--stroke">
+                <a href="/?lang=en" class="btn btn--stroke">
                     <?php echo $text->hero->btn1; ?>
                 </a>
-                <a href="#services" class="smoothscroll btn btn--stroke">
+                <a href="/?lang=ua" class="btn btn--stroke">
                     <?php echo $text->hero->btn2; ?>
                 </a>
             </div>
